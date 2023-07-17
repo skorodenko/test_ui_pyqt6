@@ -31,8 +31,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.tableView.setModel(self.table_model)
 
         self.actionSave_as.triggered.connect(self.saveAs)
-        self.actionAdd_One.triggered.connect(self.addColumn)
-        self.actionAdd_One_2.triggered.connect(self.addRow)
+        self.actionAdd_One.triggered.connect(self.addRow)
+        self.actionAdd_One_2.triggered.connect(self.addColumn)
 
         self.show()
 
