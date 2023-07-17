@@ -15,6 +15,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     @table.default
     def _table_init(self):
+        # Change datatype here to contain more then 64 characters
         table = np.full((1, 1), "", dtype=np.dtype("U64"))
         return table
 
