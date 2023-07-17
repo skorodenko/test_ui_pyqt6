@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "test-ui-pyqt6"
+version = "0.1.0"
+description = ""
+authors = ["skorodenko <72010957+skorodenko@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "test_ui_pyqt6"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyqt6 = "^6.5.1"
+attrs = "^23.1.0"
+python-docx = "^0.8.11"
+numpy = "^1.25.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
