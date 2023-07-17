@@ -10,3 +10,4 @@ python3 main.py
 1. Only 64 length strings can be used to fill the table (can be changed)
 2. All the interactions (save as, add column/row) are located in app menu. (Can be triggered by alt + __first letter of menu item__)
 3. Do not save large tables to docx file (limitation of python-docx module)
+4. When saving to file, can both add or omit .docx extension
