@@ -32,12 +32,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.tableView.setModel(self.table_model)
 
         self.actionSave_as.triggered.connect(self.saveAs)
-        self.actionAdd_One.triggered.connect(self.addRow)
-        self.actionAdd_One_2.triggered.connect(self.addColumn)
+        self.actionAdd_One_2.triggered.connect(self.addRow)
+        self.actionAdd_One.triggered.connect(self.addColumn)
 
         self.show()
 
-    def add_column(self, n=1):
+    def add_row(self, n=1):
         if n == 0:
             self.table_model.update_table(self.table)
             return None
@@ -45,7 +45,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.table = np.vstack([self.table, new_col])
         self.add_column(n=n - 1)
 
-    def add_row(self, n=1):
+    def add_column(self, n=1):
         if n == 0:
             self.table_model.update_table(self.table)
             return None
